@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student list</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+ 	
+	<p th:text="'Welcome to the Haaga-Helia!'"/>
+	
+	<table>
+		
+		<tr th:each="student: ${students}">
+			<td th:text="${Student.Student}"></td>
+		
+		</tr>
+	</table>
+	
+	</body>
+</html>
